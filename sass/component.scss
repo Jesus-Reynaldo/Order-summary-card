@@ -2,14 +2,18 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 .card {
-  margin: 0;
+  margin: 1em;
   padding: 0;
-  border: 1px solid black;
   border-radius: 20px;
   background-color: white;
   max-width: 450px;
   height: 700px;
+  box-shadow: 20px 10px 30px global.$desaturated-blue;
+  &:hover {
+    box-shadow: 20px 10px 30px hsl(245, 83%, 68%, 30%);
+  }
   .card-image {
+    margin: 0;
     background-image: url("../images/illustration-hero.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,17 +36,43 @@
       }
     }
     .card-price {
+      margin: 0 3.2em;
       padding: 1.5em;
       display: flex;
-      // justify-content: space-between;
       gap: 1.5em;
       align-items: center;
       background-color: global.$very-pale-blue;
       border-radius: 15px;
-      border: solid 1px black;
-      margin: 0 3.2em;
       a {
         margin-left: 3em;
+        &:hover {
+          cursor: pointer;
+          color: hsl(245, 83%, 68%);
+        }
+      }
+    }
+    .card-payment {
+      margin: 2em 3.2em;
+      button {
+        margin-bottom: 2rem;
+        font-family: "Reed Hat Display", sans-serif;
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-radius: 15px;
+        &:hover {
+          cursor: pointer;
+          background-color: hsl(245, 83%, 68%);
+          box-shadow: 0 20px 20px hsl(245, 83%, 68%, 30%);
+        }
+      }
+      a {
+        text-decoration: none;
+        color: global.$desaturated-blue;
+        &:hover {
+          cursor: pointer;
+          color: global.$dark-blue;
+        }
       }
     }
   }

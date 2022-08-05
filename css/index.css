@@ -40,16 +40,30 @@ h4 {
   color: hsl(223deg, 47%, 23%);
 }
 
+a {
+  color: hsl(245deg, 75%, 52%);
+}
+
+button {
+  background-color: hsl(245deg, 75%, 52%);
+  color: hsl(225deg, 100%, 98%);
+  box-shadow: 0 10px 20px hsl(225deg, 100%, 94%);
+}
+
 .card {
-  margin: 0;
+  margin: 1em;
   padding: 0;
-  border: 1px solid black;
   border-radius: 20px;
   background-color: white;
   max-width: 450px;
   height: 700px;
+  box-shadow: 20px 10px 30px hsl(224deg, 23%, 55%);
+}
+.card:hover {
+  box-shadow: 20px 10px 30px hsla(245deg, 83%, 68%, 0.3);
 }
 .card .card-image {
+  margin: 0;
   background-image: url("../images/illustration-hero.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,17 +87,44 @@ h4 {
   margin-bottom: 1.8rem;
 }
 .card .card-body .card-price {
+  margin: 0 3.2em;
   padding: 1.5em;
   display: flex;
   gap: 1.5em;
   align-items: center;
   background-color: hsl(225deg, 100%, 98%);
   border-radius: 15px;
-  border: solid 1px black;
-  margin: 0 3.2em;
 }
 .card .card-body .card-price a {
   margin-left: 3em;
+}
+.card .card-body .card-price a:hover {
+  cursor: pointer;
+  color: hsl(245deg, 83%, 68%);
+}
+.card .card-body .card-payment {
+  margin: 2em 3.2em;
+}
+.card .card-body .card-payment button {
+  margin-bottom: 2rem;
+  font-family: "Reed Hat Display", sans-serif;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 15px;
+}
+.card .card-body .card-payment button:hover {
+  cursor: pointer;
+  background-color: hsl(245deg, 83%, 68%);
+  box-shadow: 0 20px 20px hsla(245deg, 83%, 68%, 0.3);
+}
+.card .card-body .card-payment a {
+  text-decoration: none;
+  color: hsl(224deg, 23%, 55%);
+}
+.card .card-body .card-payment a:hover {
+  cursor: pointer;
+  color: hsl(223deg, 47%, 23%);
 }
 
 /*# sourceMappingURL=index.css.map */
